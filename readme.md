@@ -1,1 +1,1 @@
-# Green aka the cee lo machine
+# Green aka The Cee Lo Machine
