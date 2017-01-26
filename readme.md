@@ -1,1 +1,2 @@
-# Green aka The Cee Lo Machine
+# Green aka The Cee-Lo Machine
+The etymological origins of Cee-Lo come from the chinese 四五六 (Sì-Wŭ-Liù) meaning 4-5-6. Cee-Lo is a turn based game of chance played with three dice. Much like poker mixed with some exceptions from craps, the goal of the game is to get a roll which has a higher rank than your opponent. Ranks from highest to lowest are: straight, triple, double. if one player rolls 4, 5, 6 (highest possible rank) they instantly win with double payout. The rule exceptions, resulting in instant loss, will be triple or double 1's and the lowest straight possible (1,2,3). 
