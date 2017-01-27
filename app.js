@@ -69,7 +69,7 @@ $(document).ready(function(){
 
     }
         else if ($checkP1d1 === 1 && $checkP1d2 === 1 || $checkP1d1 === 1 && $checkP1d3 === 1 || $checkP1d2 === 1 && $checkP1d3 === 1) {
-        $("#P1score").text('$'+ ($P1score-$P1score=$P1score));
+        $("#P1score").text('$'+ ($P1score=$P1score-$P1score));
         alert("you lose");
       } else {
         alert("You win: $5")
@@ -83,7 +83,7 @@ $(document).ready(function(){
     if ($checkP1d1 === $checkP1d2 && $checkP1d2 === $checkP1d3) {
       // if (){}
          if ($checkP1d1 === 1) {
-        $("#P1score").text('$' + ($P1score-$P1score=$P1score));
+        $("#P1score").text('$' + ($P1score=$P1score-$P1score));
         alert("you lose");
         // snake eyes
       } else {
