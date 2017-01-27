@@ -1,26 +1,36 @@
 
 
-.spin {
+.roll {
   transform: rotate(720deg);
   transition: all 1s ease-in-out;
+  
 }
 
 .dice {
     border:#000 1px solid;
-    width:150px;
-    height:150px;
-    margin: 5px;
-
+    width:100px;
+    height:100px;
+    margin: 10px;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
+}
+
+#player1container{
+  /*display: flex;*/
+  /*position: fixed;*/
+
+
+
 
 }
-#player1container{
-  display: flex;
-}
+
 #player2container{
-  display: flex;
+  /*display: flex;*/
+  /*position: fixed;*/
+
+
+
 }
