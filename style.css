@@ -1,13 +1,10 @@
-
-
 .roll {
   transform: rotate(720deg);
   transition: all 1s ease-in-out;
-  
 }
 
 .dice {
-    border:#000 1px solid;
+    /*border:#000 1px solid;*/
     width:100px;
     height:100px;
     margin: 10px;
@@ -21,16 +18,16 @@
 #player1container{
   /*display: flex;*/
   /*position: fixed;*/
-
-
-
-
 }
 
 #player2container{
   /*display: flex;*/
   /*position: fixed;*/
+}
 
+.btn{
 
-
+}
+#resetBtn{
+  margin-top: 370px;
 }
