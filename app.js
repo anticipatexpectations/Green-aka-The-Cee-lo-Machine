@@ -250,17 +250,24 @@ $p2Dice.sort(function (a, b) {
 
 
 $("#cashBtn").on("click", function(){
-  if ($P1score>100 || $P2score>100){
+  if ($P1score>100){
     $P1cashScore = $P1score;
-    $P2cashScore = $P2score;
+
+
     $("#P1cashScore").text("Cashed Out $"+ $P1cashScore);
-    $("#P2cashScore").text("Cashed Out $"+ $P2cashScore);
+
+
     $P1score=0;
-    $P2score=0;
+
     $("#P1score").text("Pool $"+ $P1score);
+
+
+
+  } else if ($P2score>100){
+    $P2cashScore = $P2score;
+    $("#P2cashScore").text("Cashed Out $"+ $P2cashScore);
+    $P2score=0;
     $("#P2score").text("Pool $"+ $P2score);
-
-
   }
 });
 
