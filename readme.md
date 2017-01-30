@@ -12,3 +12,8 @@ Much like poker mixed with some exceptions from craps, the goal of the game is t
 * as a user I should be able to click “roll ‘em” until one of the rule set fires
 * as a user I should see the roll animation before getting the pop up alert
 * as a user I should be able to accumulate money in the pool until it reaches 100 for an individual player and then click on the cashout button
+
+# Unsolved problems
+* head to head without bank, replaced by individual bets
+* jquery eventlistener for keypress enter key
+* music
