@@ -2,7 +2,7 @@ body{
   background-image: url(https://wallpaperscraft.com/image/dice_3d_flying_104313_1920x1080.jpg);
   text-align: center;
   display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 
@@ -34,6 +34,7 @@ body{
     width:100px;
     height:100px;
     margin: 10px;
+    align-items: center;
 
 
 
@@ -41,7 +42,8 @@ body{
 
 
 .container {
-  display: flex;
+  margin: auto;
+  /*display: block;*/
   /*align-items: center;*/
 
   /*flex-direction: column;*/
@@ -49,18 +51,24 @@ body{
 
 .diceContainer{
 display: flex;
+margin: auto;
+
 }
 
 #player1container{
   margin-top: 100px;
-  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+
   /*display: flex;*/
   /*position: fixed;*/
 }
 
 #player2container{
   margin-top: 100px;
-  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+
 
   /*display: flex;*/
   /*position: fixed;*/
