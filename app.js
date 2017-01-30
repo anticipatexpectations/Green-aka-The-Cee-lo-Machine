@@ -20,6 +20,7 @@ $diceArray = [
 ]
 // var $diceRando = $diceArray[Math.floor(Math.random()*($diceArray.length))].img;
 
+
 $(document).ready(function(){
   var $P1score = 0;
   var $P2score = 0;
@@ -42,7 +43,16 @@ $(document).ready(function(){
     $checkP2d2 = parseInt($('#diceP2-2').attr('src')[11])
     $checkP2d3 = parseInt($('#diceP2-3').attr('src')[11])
   };
-
+//
+//
+//
+//
+//
+//
+//
+//
+// Player 1 functionality and rules
+//
   var $P1instaLose = function(){
     $getDiceValues();
     var $p1Dice = [
@@ -126,7 +136,7 @@ $(document).ready(function(){
 //
 //
 //
-//
+//Player 2 functionality and rules
 //
 var $P2instaLose = function(){
   $getDiceValues();
@@ -211,8 +221,35 @@ $p2Dice.sort(function (a, b) {
 //
 //
 //
+//spin animation and dice face value change of both players
+// Also fires rules for wins and losses of each player with a delay to when the animation ends
+//
+// $("#rollBtn").on("keypress", function(event){
+//   if(event.which === 13 ){
+//     $(".dice").addClass("roll");
+//
+//     $("#diceP1-1").attr("src", $randomValue());
+//     $("#diceP1-2").attr("src", $randomValue());
+//     $("#diceP1-3").attr("src", $randomValue());
+//
+//     $("#diceP2-1").attr("src", $randomValue());
+//     $("#diceP2-2").attr("src", $randomValue());
+//     $("#diceP2-3").attr("src", $randomValue());
+//
+//     $(".dice").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+//     function(e) {
+//       $(".dice").removeClass("roll");
+//     });
 //
 //
+//
+//   }});
+
+
+
+
+
+
   $("#rollBtn").on("click", function(){
     $(".dice").addClass("roll");
 
@@ -228,6 +265,7 @@ $p2Dice.sort(function (a, b) {
     function(e) {
       $(".dice").removeClass("roll");
     });
+
     setTimeout($P1instaLose, 1000);
     setTimeout($P1dubs, 1000);
     setTimeout($P1trips, 1000);
