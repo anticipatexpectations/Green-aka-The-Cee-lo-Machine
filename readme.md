@@ -6,3 +6,9 @@ Much like poker mixed with some exceptions from craps, the goal of the game is t
 * html: frame for elements in html body
 * CSS: style for layout and images
 * javascript library: jquery to add functionality and rule set
+
+
+# User Stories
+* as a user I should be able to click “roll ‘em” until one of the rule set fires
+* as a user I should see the roll animation before getting the pop up alert
+* as a user I should be able to accumulate money in the pool until it reaches 100 for an individual player and then click on the cashout button
