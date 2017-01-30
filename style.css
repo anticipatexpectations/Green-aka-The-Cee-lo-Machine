@@ -1,6 +1,8 @@
 body{
   background-image: url(https://wallpaperscraft.com/image/dice_3d_flying_104313_1920x1080.jpg);
   text-align: center;
+  display: flex;
+    align-items: center;
 }
 
 
@@ -12,8 +14,7 @@ body{
   font-family: helvetica sans-serif;
   color: white;
   text-align: center;
-  /*flex-wrap: nowrap;*/
-  /*display: flex;*/
+
   padding: 20px;
 }
 
