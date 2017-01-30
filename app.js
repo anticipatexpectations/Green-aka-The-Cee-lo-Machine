@@ -192,6 +192,7 @@ var $P2trips = function(){
     }
   }
 }
+// P2 straight
 var $P2straight =function(){
   $getDiceValues();
   var $p2Dice = [
@@ -199,7 +200,6 @@ var $P2straight =function(){
     $checkP2d2,
     $checkP2d3,
   ]
-
 $p2Dice.sort(function (a, b) {
     return a-b
   }); if ($p2Dice[0]===2 && $p2Dice[1]===3 && $p2Dice[2]===4){
@@ -248,7 +248,7 @@ $p2Dice.sort(function (a, b) {
 //
 //   }});
 
-
+// cash out functionality
 $("#cashBtn").on("click", function(){
   if ($P1score>100){
     $P1cashScore = $P1score;
@@ -266,7 +266,7 @@ $("#cashBtn").on("click", function(){
 
 
 
-
+// button click, randomize die, and removal of roll class from css after animation finishes
   $("#rollBtn").on("click", function(){
     $(".dice").addClass("roll");
 
@@ -282,7 +282,7 @@ $("#cashBtn").on("click", function(){
     function(e) {
       $(".dice").removeClass("roll");
     });
-
+// firing of rules with delay for when animation finishes
     setTimeout($P1instaLose, 1000);
     setTimeout($P1dubs, 1000);
     setTimeout($P1trips, 1000);

@@ -5,7 +5,13 @@ body{
     /*align-items: center;*/
 }
 
+#P1title{
+  color: white;
+}
 
+#P2title{
+  color: white;
+}
 .roll {
   transform: rotate(720deg);
   transition: all 1s ease-in-out;
