@@ -252,16 +252,9 @@ $p2Dice.sort(function (a, b) {
 $("#cashBtn").on("click", function(){
   if ($P1score>100){
     $P1cashScore = $P1score;
-
-
     $("#P1cashScore").text("Cashed Out $"+ $P1cashScore);
-
-
     $P1score=0;
-
     $("#P1score").text("Pool $"+ $P1score);
-
-
 
   } else if ($P2score>100){
     $P2cashScore = $P2score;
