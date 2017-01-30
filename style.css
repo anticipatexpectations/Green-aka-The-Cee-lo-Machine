@@ -10,14 +10,19 @@ body{
 .text-center{
   font-family: helvetica sans-serif;
   color: white;
+  text-align: center;
+  /*flex-wrap: nowrap;*/
 }
 
 #P1score{
-  padding-left: 5px;
+  padding-left: 20px;
+  color: white;
 }
 
 #P2score{
-  padding-left: 5px;
+
+  padding-left: 20px;
+  color: white;
 }
 
 .dice {
@@ -25,21 +30,30 @@ body{
     width:100px;
     height:100px;
     margin: 10px;
+
+
+
 }
 
 
 .container {
   display: flex;
+  align-items: center;
 
   /*flex-direction: column;*/
 }
 
 #player1container{
+  margin-top: 100px;
+  flex-wrap: nowrap;
   /*display: flex;*/
   /*position: fixed;*/
 }
 
 #player2container{
+  margin-top: 100px;
+  flex-wrap: nowrap;
+
   /*display: flex;*/
   /*position: fixed;*/
 }
@@ -58,8 +72,5 @@ body{
     display: block;
   }
 
-  .text-center {
-    tex: 100%;
 
-  }
 }
