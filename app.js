@@ -68,7 +68,7 @@ $(document).ready(function(){
       return a-b
     }); if ($p1Dice[0]===1 && $p1Dice[1]===2 && $p1Dice[2]===3){
       $P1score = 0;
-      $("#P1score").text('$' + $P1score);
+      $("#P1score").text('Pool $' + $P1score);
       alert("Player 1 Loss");
     }
   }
@@ -80,13 +80,13 @@ $(document).ready(function(){
     }
         else if ($checkP1d1 === 1 && $checkP1d2 === 1 || $checkP1d1 === 1 && $checkP1d3 === 1 || $checkP1d2 === 1 && $checkP1d3 === 1) {
           $P1score = 0;
-          $("#P1score").text('$'+ $P1score);
+          $("#P1score").text('Pool $'+ $P1score);
         // $("#P1score").text('$'+ ($P1score=$P1score-$P1score));
         alert("Player 1 Loss");
       } else {
         alert("Player 1 Win: $5")
         $P1score=$P1score+5;
-        $("#P1score").text("$" + $P1score);
+        $("#P1score").text("Pool $" + $P1score);
       }
     }
   }
@@ -96,14 +96,14 @@ $(document).ready(function(){
 
          if ($checkP1d1 === 1) {
         $P1score = 0;
-        $("#P1score").text("$" + $P1score);
+        $("#P1score").text("Pool $" + $P1score);
         // $("#P1score").text('$' + ($P1score=$P1score-$P1score));
         alert("Player 1 Loss");
         // snake eyes
       } else {
         alert("Player 1 Win: $10")
         $P1score=$P1score+10;
-        $("#P1score").text("$"+ $P1score);
+        $("#P1score").text("Pool $"+ $P1score);
       }
     }
   }
@@ -120,15 +120,15 @@ $(document).ready(function(){
     }); if ($p1Dice[0]===2 && $p1Dice[1]===3 && $p1Dice[2]===4){
       alert("Player 1 Win: $15");
       $P1score=$P1score+15;
-      $("#P1score").text("$"+ $P1score);
+      $("#P1score").text("Pool $"+ $P1score);
     } else if ($p1Dice[0]===3 && $p1Dice[1]===4 && $p1Dice[2]===5){
       alert("Player 1 Win: $15");
       $P1score=$P1score+15;
-      $("#P1score").text("$"+ $P1score);
+      $("#P1score").text("Pool $"+ $P1score);
     } else if ($p1Dice[0]===4 && $p1Dice[1]===5 && $p1Dice[2]===6){
       alert("Player 1 Win: $30");
       $P1score=$P1score+30;
-      $("#P1score").text("$"+ $P1score);
+      $("#P1score").text("Pool $"+ $P1score);
     }
 
   }
@@ -153,7 +153,7 @@ var $P2instaLose = function(){
     return a-b
   }); if ($p2Dice[3]===1 && $p2Dice[4]===2 && $p2Dice[2]===3){
     $P2score=0;
-    $("#P2score").text('$'+ $P2score);
+    $("#P2score").text('Pool $'+ $P2score);
     alert("Player 2 Loss");
   }
 }
@@ -165,13 +165,13 @@ var $P2dubs = function(){
   }
       else if ($checkP2d1 === 1 && $checkP2d2 === 1 || $checkP2d1 === 1 && $checkP2d3 === 1 || $checkP2d2 === 1 && $checkP2d3 === 1) {
         $P2score = 0;
-        $("#P2score").text('$'+ $P2score);
+        $("#P2score").text('Pool $'+ $P2score);
       // $("#P1score").text('$'+ ($P1score=$P1score-$P1score));
       alert("Player 2 Loss");
     } else {
       alert("Player 2 Win: $5")
       $P2score=$P2score+5;
-      $("#P2score").text("$" + $P2score);
+      $("#P2score").text("Pool $" + $P2score);
     }
   }
 }
@@ -181,14 +181,14 @@ var $P2trips = function(){
 
        if ($checkP2d1 === 1) {
       $P2score = 0;
-      $("#P1score").text("$" + $P2score);
+      $("#P1score").text("Pool $" + $P2score);
       // $("#P1score").text('$' + ($P1score=$P1score-$P1score));
       alert("Player 2 Loss");
       // snake eyes
     } else {
       alert("Player 2 Win: $10")
       $P2score=$P2score+10;
-      $("#P1score").text("$"+ $P2score);
+      $("#P1score").text("Pool $"+ $P2score);
     }
   }
 }
@@ -205,15 +205,15 @@ $p2Dice.sort(function (a, b) {
   }); if ($p2Dice[0]===2 && $p2Dice[1]===3 && $p2Dice[2]===4){
     alert("Player 2 Win: $15");
     $P2score=$P2score+15;
-    $("#P2score").text("$"+ $P2score);
+    $("#P2score").text("Pool $"+ $P2score);
   } else if ($p2Dice[0]===3 && $p2Dice[1]===4 && $p2Dice[2]===5){
     alert("Player 2 Win: $15");
     $P2score=$P2score+15;
-    $("#P2score").text("$"+ $P2score);
+    $("#P2score").text("Pool $"+ $P2score);
   } else if ($p2Dice[0]===4 && $p2Dice[1]===5 && $p2Dice[2]===6){
     alert("Player 2 Win: $30");
     $P2score=$P2score+30;
-    $("#P2score").text("$"+ $P2score);
+    $("#P2score").text("Pool $"+ $P2score);
   }
 
 }
