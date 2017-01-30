@@ -24,12 +24,15 @@ $diceArray = [
 $(document).ready(function(){
   var $P1score = 0;
   var $P2score = 0;
+  var $P1cashScore = 0;
+  var $P2cashScore = 0;
   var $checkP1d1
   var $checkP1d2
   var $checkP1d3
   var $checkP2d1
   var $checkP2d2
   var $checkP2d3
+
 
   var $randomValue = function() {
     return $diceArray[Math.floor(Math.random()*($diceArray.length))].img;
@@ -246,6 +249,20 @@ $p2Dice.sort(function (a, b) {
 //   }});
 
 
+$("#cashBtn").on("click", function(){
+  if ($P1score>100 || $P2score>100){
+    $P1cashScore = $P1score;
+    $P2cashScore = $P2score;
+    $("#P1cashScore").text("Cashed Out $"+ $P1cashScore);
+    $("#P2cashScore").text("Cashed Out $"+ $P2cashScore);
+    $P1score=0;
+    $P2score=0;
+    $("#P1score").text("Pool $"+ $P1score);
+    $("#P2score").text("Pool $"+ $P2score);
+
+
+  }
+});
 
 
 
